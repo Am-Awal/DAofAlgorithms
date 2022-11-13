@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct DAofAlgorithmsApp: App {
+    
+    @StateObject var sorting = Sorting()
+//    @StateObject var BVM = BarViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .environmentObject(BVM)
+                .environmentObject(sorting)
+//                .preferredColorScheme(.light)
         }
     }
 }
